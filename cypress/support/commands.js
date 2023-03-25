@@ -23,3 +23,22 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add('createUser', (user) => {
+
+    // Esta funcão de DELETE esta sendo chamada no "try - catch" em app.js    
+    // cy.request({
+    //     method: 'DELETE',
+    //     url: 'http://localhost:5000/user/' + user.email
+    // }).then(function (response) {
+    //     expect(response.status).to.equal(204)
+    // })
+
+    cy.request({
+        method: 'POST',
+        url: 'http://localhost:5000/user',
+        body: user
+    }).then(function (response) {
+        expect(response.status).to.equal(201)
+    })
+})

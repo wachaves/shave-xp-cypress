@@ -1,0 +1,33 @@
+{
+    "success": {
+        "name": "William",
+        "email": "wac@gmail.com",
+        "password": "wac123",
+        "is_shaver": false
+    },
+    "invpass": {
+        "email": "wac@gmail.com",
+        "password": "123456"
+    },
+    "email404": {
+        "email": "wac@404.com",
+        "password": "wac123"
+    },
+    "sortpass": [
+        "1",
+        "12",
+        "123",
+        "1234",
+        "12345"
+    ],
+    "invemails": [
+        "wac&gmail.com",
+        "wac.com.br",
+        "@gmail.com",
+        "@",
+        "wac@",
+        "123345456",
+        "@#$%%¨$¨$#@#",
+        "qwer1234"
+    ]
+}
